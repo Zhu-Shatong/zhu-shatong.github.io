@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Shatong Zhu
+title: 朱沙桐
 
 # Name pronunciation (optional)
 name_pronunciation: Shatong Zhu
@@ -21,7 +21,7 @@ role: B.S.Student
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Tongji University
+  - name: 同济大学
     url: https://www.tongji.edu.cn/
 
 # Short bio (displayed in user profile at end of posts)
@@ -29,62 +29,17 @@ bio: My research interests include distributed robotics, mobile computing and pr
 
 # Interests to show in About widget
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - 人工智能
+  - 数据科学
+  - 多智能体强化学习
+  - 计量经济学
 
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
-
-# Skills
-# For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
-skills:
-  - name: Technical
-    items:
-      - name: Python
-        description: ''
-        percent: 80
-        icon: python
-        icon_pack: fab
-      - name: Data Science
-        description: ''
-        percent: 100
-        icon: chart-line
-        icon_pack: fas
-      - name: SQL
-        description: ''
-        percent: 40
-        icon: database
-        icon_pack: fas
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-hiking
-        icon_pack: fas
-      - name: Cats
-        description: ''
-        percent: 100
-        icon: cat
-        icon_pack: fas
-      - name: Photography
-        description: ''
-        percent: 80
-        icon: camera-retro
-        icon_pack: fas
+    - course: 本科 数据科学与大数据技术
+      institution: 同济大学
+      year: 2021
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -93,22 +48,10 @@ skills:
 social:
   - icon: envelope
     icon_pack: fas
-    link: '/#contact'
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
-    label: Follow me on Twitter
-    display:
-      header: true
-  - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
-    icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: 'zhushatong@vip.qq.com'
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
-  - icon: linkedin
-    icon_pack: fab
-    link: https://www.linkedin.com/
+    link: https://github.com/Zhu-Shatong
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
@@ -120,5 +63,9 @@ social:
 highlight_name: true
 ---
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+我是同济大学电子与信息工程学院数据科学与大数据技术专业的一名三年级本科学生。
+
+我目前的研究兴趣为多智能体强化学习（MARL）和计量经济学。
+
+大二学年绩点排名专业第二，综合排名专业第三；获2023年度国家奖学金、2022年度同济大学一等奖学金；获2021-2022学年同济大学优秀学生称号；竞赛方面，获2023年全国大学生统计建模大赛国家级三等奖、统计建模大赛上海赛区省部级一等奖、2021年长三角大学生低碳水系统创新大赛省部级铜奖、2023“外研社·国才杯”全国大学生外语能力大赛校级二等奖；科研方面，参与本院TiEV实验室多智能体强化学习相关研究、数学科学学院计量经济学相关研究；创新创业方面，领导创新实践与创业企划一项，HIS信息系统软著申请一项；志愿服务方面，参与医院导诊、院团委组织的多项志愿服务；社会实践方面，参与2022联合国教科文组织与同济大学“涟漪行动”，以团队主力身份参与2023年暑假社会实践2项，分别获评A类与B类。
 {style="text-align: justify;"}
