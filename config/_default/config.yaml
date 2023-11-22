@@ -3,14 +3,14 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: Shatong Zhu # Website name
-baseURL: 'https://zhushatong.com/' # Website URL
+title: 朱沙桐 # Website name
+baseURL: "https://zhushatong.com/" # Website URL
 
 ############################
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
+defaultContentLanguage: zh
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
 removePathAccents: true
@@ -37,10 +37,10 @@ enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 permalinks:
-  event: '/talk/:slug/'
-  tags: '/tag/:slug/'
-  categories: '/category/:slug/'
-  publication_types: '/publication-type/:slug/'
+  event: "/talk/:slug/"
+  tags: "/tag/:slug/"
+  categories: "/category/:slug/"
+  publication_types: "/publication-type/:slug/"
 disableAliases: true
 outputs:
   home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
