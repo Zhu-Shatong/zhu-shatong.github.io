@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://zhu-shatong.github.io/sitemap.xml
+Sitemap: https://zhushatong.com/sitemap.xml
