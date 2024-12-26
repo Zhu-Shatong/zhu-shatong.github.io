@@ -2,7 +2,7 @@
 ---
 <div class="row">
   {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-2 abbr">
+    <div class="col col-sm-2 abbr" style="min-width: 300px;">
 
     {%- if entry.abbr -%}
     {%- if site.data.venues[entry.abbr] -%}
@@ -11,8 +11,7 @@
     {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: ';"' %}
     {% endif -%}
     
-    <abbr class="badge" {% if venue_style %} {{ venue_style }} {% endif -%} style="min-width: 300px;" <!-- 添加宽度 -->
-      >
+    <abbr class="badge" {% if venue_style %} {{ venue_style }} {% endif -%} style="min-width: 300px;" >
       {% if site.data.venues[entry.abbr].url %}
       <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
       {% else %}
@@ -42,7 +41,8 @@
             include figure.liquid
             loading="eager"
             path=entry_path
-            sizes = "400px"
+            sizes = "300px"
+            min-width = "300px"
             class="preview z-depth-1 rounded"
             zoomable=true
             alt=entry.preview
