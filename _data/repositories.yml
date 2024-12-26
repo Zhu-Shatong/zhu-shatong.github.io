@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - Zhu-Shatong
 
-repo_description_lines_max: 2
+repo_description_lines_max: 3
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - Zhu-Shatong/RailTracker
+  - Zhu-Shatong/DynamicSocialNetworkFraudDetection
+  - Zhu-Shatong/Building-Linear-Regression-from-Scratch
+  - Zhu-Shatong/OpenGL-CG-TextureAndLights
