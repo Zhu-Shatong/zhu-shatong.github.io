@@ -404,25 +404,25 @@ ul.task-list input[type="checkbox"] {
   text-align: left;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 3rem;
 
     a {
-      img {
-        width: 3.2rem;
-        height: 3.2rem;
-        margin-bottom: 1rem;
-      }
+      // img {
+      //   width: 3.2rem;
+      //   height: 3.2rem;
+      //   margin-bottom: 1rem;
+      // }
 
-      svg {
-        width: 3.5rem;
-        height: 4rem;
-        margin-bottom: 0.5rem;
+      // svg {
+      //   width: 3.5rem;
+      //   height: 4rem;
+      //   margin-bottom: 0.5rem;
 
-        image {
-          width: 3.5rem;
-          height: 3.5rem;
-        }
-      }
+      //   image {
+      //     width: 3.5rem;
+      //     height: 3.5rem;
+      //   }
+      // }
 
       i::before {
         color: var(--global-text-color);
