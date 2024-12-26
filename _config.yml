@@ -15,7 +15,7 @@ footer_text: >
 keywords: Shatong Zhu, Zhu Shatong, 朱沙桐, machine learning, AI, artificial intelligence, RL # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🌟 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: tongji.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://zhushatong.com # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -49,13 +49,13 @@ rss_icon: true
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 930px
+max_width: 800px
 
 # TODO: add layout settings (single page vs. multi-page)
 
