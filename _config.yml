@@ -9,7 +9,7 @@ title: Shatong Zhu # the website title (if blank, full name will be used instead
 first_name: Shatong
 middle_name: 
 last_name: Zhu
-email: shatong.zhu@gmail.com
+# email: shatong.zhu@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   The personal website of Shatong Zhu.
 footer_text: >
