@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I was awarded the National Scholarship for the 2024 academic year! (Top 0.2% nationwide)
+🏆 I was awarded the National Scholarship for the 2024 academic year! (Top 0.2% nationwide)
