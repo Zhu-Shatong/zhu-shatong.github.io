@@ -9,7 +9,7 @@ layout: default
     {% if page.profile -%}
 
 <div class="row">
-  <div class="col-12 col-md-3">
+  <div class="col-3 col-md-3">
     {%- if page.profile.image %}
     {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
   
@@ -19,11 +19,11 @@ layout: default
     {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
     {% endif %}
   
-    <img src="{{ profile_image_path }}" class="{{ profile_image_class }}" alt="{{ page.profile.image }}" style="max-width: 500px; height: auto;">
+    <img src="{{ profile_image_path }}" class="{{ profile_image_class }}" alt="{{ page.profile.image }}" >
     {% endif -%}
   </div>
   
-  <div class="col-12 col-md-9">
+  <div class="col-9 col-md-9">
     <h1 class="post-title">
       {% if site.title == "blank" -%}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }} {%- else -%}{{
       site.title }}{%- endif %} 「朱沙桐」
