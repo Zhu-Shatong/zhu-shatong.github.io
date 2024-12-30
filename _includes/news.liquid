@@ -1,34 +1,38 @@
 <div class="news">
   {% if site.news != blank %}
-    {% assign news_size = site.news | size %}
-    <div
-      class="table-responsive"
-      {% if include.limit and site.announcements.scrollable and news_size > 3 %}
-        style="max-height: 60vw"
-      {% endif %}
+  {% assign news_size = site.news | size %}
+  <div class="table-responsive" {% if include.limit and site.announcements.scrollable and news_size> 3 %}
+    style="max-height: 60vw"
+    {% endif %}
     >
-      <table class="table table-sm table-borderless">
-        {% assign news = site.news | reverse %}
-        {% if include.limit and site.announcements.limit %}
-          {% assign news_limit = site.announcements.limit %}
-        {% else %}
-          {% assign news_limit = news_size %}
-        {% endif %}
-        {% for item in news limit: news_limit %}
-          <tr>
-            <th scope="row" style="color: black; width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
-            <td style="color: black;">
-              {% if item.inline %}
-                {{ item.content | remove: '<p>' | remove: '</p>' }}
-              {% else %}
-                <a class="news-title" href="{{ item.url | relative_url }}" style="color: black;">{{ item.title }}</a>
-              {% endif %}
-            </td>
-          </tr>
-        {% endfor %}
-      </table>
-    </div>
+    <table class="table table-sm table-borderless">
+      {% assign news = site.news | reverse %}
+      {% if include.limit and site.announcements.limit %}
+      {% assign news_limit = site.announcements.limit %}
+      {% else %}
+      {% assign news_limit = news_size %}
+      {% endif %}
+      {% for item in news limit: news_limit %}
+      <tr>
+        <th scope="row" style="color: black; width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
+        <td style="color: black;">
+          {% if item.inline %}
+          {% capture content_with_image %}{{ item.content | remove: '<p>' | remove: '</p>' }}{% endcapture %}
+          {{ content_with_image | replace_regex: '\[logo\s+of\s+(.*?)\]', '<img src="/assets/img/\1" alt="\1 logo"
+            style="height: 1em; vertical-align: middle;">' }}
+          {% else %}
+          <a class="news-title" href="{{ item.url | relative_url }}" style="color: black;">
+            {% capture content_with_image %}{{ item.title }}{% endcapture %}
+            {{ content_with_image | replace_regex: '\[logo\s+of\s+(.*?)\]', '<img src="/assets/img/\1" alt="\1 logo"
+              style="height: 1em; vertical-align: middle;">' }}
+          </a>
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
   {% else %}
-    <p>No news so far...</p>
+  <p>No news so far...</p>
   {% endif %}
 </div>
