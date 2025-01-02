@@ -1035,21 +1035,22 @@
         .map(
           (author) => `
         <p class="author">
-          ${author.personalURL
+          ${
+            author.personalURL
               ? `
             <a class="name" href="${author.personalURL}">${author.name}</a>`
               : `
             <span class="name">${author.name}</span>`
-            }
+          }
         </p>
         <p class="affiliation">
         ${author.affiliations
-              .map((affiliation) =>
-                affiliation.url
-                  ? `<a class="affiliation" href="${affiliation.url}">${affiliation.name}</a>`
-                  : `<span class="affiliation">${affiliation.name}</span>`
-              )
-              .join(", ")}
+          .map((affiliation) =>
+            affiliation.url
+              ? `<a class="affiliation" href="${affiliation.url}">${affiliation.name}</a>`
+              : `<span class="affiliation">${affiliation.name}</span>`
+          )
+          .join(", ")}
         </p>
       `
         )
@@ -1057,10 +1058,11 @@
     </div>
     <div>
       <h3>Published</h3>
-      ${frontMatter.publishedDate
-        ? `
+      ${
+        frontMatter.publishedDate
+          ? `
         <p>${frontMatter.publishedMonth} ${frontMatter.publishedDay}, ${frontMatter.publishedYear}</p> `
-        : `
+          : `
         <p><em>Not published yet.</em></p>`
       }
     </div>
@@ -1505,29 +1507,29 @@
                     IS_GLOBAL && typeof target[key] != "function"
                       ? source[key]
                       : // bind timers to global for call from export context
-                      IS_BIND && own
+                        IS_BIND && own
                         ? ctx(out, global)
                         : // wrap global constructors for prevent change them in library
-                        IS_WRAP && target[key] == out
+                          IS_WRAP && target[key] == out
                           ? (function (C) {
-                            var F = function (a, b, c) {
-                              if (this instanceof C) {
-                                switch (arguments.length) {
-                                  case 0:
-                                    return new C();
-                                  case 1:
-                                    return new C(a);
-                                  case 2:
-                                    return new C(a, b);
+                              var F = function (a, b, c) {
+                                if (this instanceof C) {
+                                  switch (arguments.length) {
+                                    case 0:
+                                      return new C();
+                                    case 1:
+                                      return new C(a);
+                                    case 2:
+                                      return new C(a, b);
+                                  }
+                                  return new C(a, b, c);
                                 }
-                                return new C(a, b, c);
-                              }
-                              return C.apply(this, arguments);
-                            };
-                            F[PROTOTYPE] = C[PROTOTYPE];
-                            return F;
-                            // make static versions for prototype methods
-                          })(out)
+                                return C.apply(this, arguments);
+                              };
+                              F[PROTOTYPE] = C[PROTOTYPE];
+                              return F;
+                              // make static versions for prototype methods
+                            })(out)
                           : IS_PROTO && typeof out == "function"
                             ? ctx(Function.call, out)
                             : out;
@@ -1588,12 +1590,12 @@
                 createDesc = require("./_property-desc");
               module.exports = require("./_descriptors")
                 ? function (object, key, value) {
-                  return dP.f(object, key, createDesc(1, value));
-                }
+                    return dP.f(object, key, createDesc(1, value));
+                  }
                 : function (object, key, value) {
-                  object[key] = value;
-                  return object;
-                };
+                    object[key] = value;
+                    return object;
+                  };
             },
             {
               "./_descriptors": 12,
@@ -1639,19 +1641,19 @@
               exports.f = require("./_descriptors")
                 ? Object.defineProperty
                 : function defineProperty(O, P, Attributes) {
-                  anObject(O);
-                  P = toPrimitive(P, true);
-                  anObject(Attributes);
-                  if (IE8_DOM_DEFINE)
-                    try {
-                      return dP(O, P, Attributes);
-                    } catch (e) {
-                      /* empty */
-                    }
-                  if ("get" in Attributes || "set" in Attributes) throw TypeError("Accessors not supported!");
-                  if ("value" in Attributes) O[P] = Attributes.value;
-                  return O;
-                };
+                    anObject(O);
+                    P = toPrimitive(P, true);
+                    anObject(Attributes);
+                    if (IE8_DOM_DEFINE)
+                      try {
+                        return dP(O, P, Attributes);
+                      } catch (e) {
+                        /* empty */
+                      }
+                    if ("get" in Attributes || "set" in Attributes) throw TypeError("Accessors not supported!");
+                    if ("value" in Attributes) O[P] = Attributes.value;
+                    return O;
+                  };
             },
             {
               "./_an-object": 9,
@@ -1803,31 +1805,31 @@
               module.exports = shouldUseNative()
                 ? Object.assign
                 : function (target, source) {
-                  var from;
-                  var to = toObject(target);
-                  var symbols;
+                    var from;
+                    var to = toObject(target);
+                    var symbols;
 
-                  for (var s = 1; s < arguments.length; s++) {
-                    from = Object(arguments[s]);
+                    for (var s = 1; s < arguments.length; s++) {
+                      from = Object(arguments[s]);
 
-                    for (var key in from) {
-                      if (hasOwnProperty.call(from, key)) {
-                        to[key] = from[key];
+                      for (var key in from) {
+                        if (hasOwnProperty.call(from, key)) {
+                          to[key] = from[key];
+                        }
                       }
-                    }
 
-                    if (Object.getOwnPropertySymbols) {
-                      symbols = Object.getOwnPropertySymbols(from);
-                      for (var i = 0; i < symbols.length; i++) {
-                        if (propIsEnumerable.call(from, symbols[i])) {
-                          to[symbols[i]] = from[symbols[i]];
+                      if (Object.getOwnPropertySymbols) {
+                        symbols = Object.getOwnPropertySymbols(from);
+                        for (var i = 0; i < symbols.length; i++) {
+                          if (propIsEnumerable.call(from, symbols[i])) {
+                            to[symbols[i]] = from[symbols[i]];
+                          }
                         }
                       }
                     }
-                  }
 
-                  return to;
-                };
+                    return to;
+                  };
             },
             {},
           ],
@@ -1935,10 +1937,10 @@
 
               var tokenRegex = new RegExp(
                 "([ \r\n\t]+)|" + // whitespace
-                "([!-\\[\\]-\u2027\u202A-\uD7FF\uF900-\uFFFF]" + // single codepoint
-                "|[\uD800-\uDBFF][\uDC00-\uDFFF]" + // surrogate pair
-                "|\\\\(?:[a-zA-Z]+|[^\uD800-\uDFFF])" + // function name
-                ")"
+                  "([!-\\[\\]-\u2027\u202A-\uD7FF\uF900-\uFFFF]" + // single codepoint
+                  "|[\uD800-\uDBFF][\uDC00-\uDFFF]" + // surrogate pair
+                  "|\\\\(?:[a-zA-Z]+|[^\uD800-\uDFFF])" + // function name
+                  ")"
               );
 
               /*
@@ -2047,7 +2049,7 @@
                   {
                     key: "nextToken",
                     value: function nextToken() {
-                      for (; ;) {
+                      for (;;) {
                         if (this.stack.length === 0) {
                           this.stack.push(this.lexer.lex());
                         }
@@ -4381,7 +4383,7 @@
                   fontName: "SansSerif-Regular",
                 },
                 mathtt: {
-                  variant: "sans-serif",
+                  variant: "monospace",
                   fontName: "Typewriter-Regular",
                 },
               };
