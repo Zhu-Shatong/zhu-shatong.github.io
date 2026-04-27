@@ -1,4 +1,11 @@
 @charset "utf-8";
+:root {
+    --stanford-red: #8c1515;
+    --stanford-red-dark: #65100f;
+    --stanford-cool-gray: #2e2d29;
+    --stanford-border: #e8e2dc;
+}
+
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -42,8 +49,76 @@ h1, h2, h3, h4, h5, h6,
     font-weight: 400;
 }
 
-.navbar {
-    opacity: 0.95;
+.site-navbar {
+    border-bottom: 1px solid var(--stanford-border);
+    box-shadow: 0 10px 30px rgba(46, 45, 41, 0.06);
+    opacity: 0.98;
+}
+
+.site-navbar::after {
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+    height: 2px;
+    content: "";
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(140, 21, 21, 0.08) 16%,
+        var(--stanford-red) 50%,
+        rgba(140, 21, 21, 0.08) 84%,
+        transparent 100%
+    );
+}
+
+.site-navbar .navbar-brand {
+    position: relative;
+    color: var(--stanford-cool-gray);
+    letter-spacing: 0;
+}
+
+.site-navbar .navbar-brand::before {
+    display: inline-block;
+    width: 3px;
+    height: 1.2em;
+    margin-right: 0.65rem;
+    vertical-align: -18%;
+    content: "";
+    background: var(--stanford-red);
+}
+
+.site-navbar .navbar-nav .nav-link {
+    position: relative;
+    margin-left: 0.35rem;
+    color: rgba(46, 45, 41, 0.68);
+    font-weight: 700;
+}
+
+.site-navbar .navbar-nav .nav-link:hover,
+.site-navbar .navbar-nav .nav-link:focus,
+.site-navbar .navbar-nav .active > .nav-link {
+    color: var(--stanford-red-dark);
+}
+
+.site-navbar .navbar-nav .active > .nav-link::after {
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.25rem;
+    left: 0.5rem;
+    height: 2px;
+    content: "";
+    background: var(--stanford-red);
+}
+
+.site-navbar .navbar-toggler {
+    color: var(--stanford-red-dark);
+    border-color: rgba(140, 21, 21, 0.32);
+}
+
+.site-navbar .navbar-toggler:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.15rem rgba(140, 21, 21, 0.16);
 }
 
 .inline-badge {
@@ -89,4 +164,3 @@ div.lazy {
 .email-text {
     font-family: Source Code Pro, monospace;
 }
-
