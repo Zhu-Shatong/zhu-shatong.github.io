@@ -1,61 +1,74 @@
-primary_name: "Your Name"
+primary_name: "Ashton (Shatong) Zhu"
 secondary_name: ""
-navbar_name: "Your Name"
+navbar_name: "Ashton Zhu"
 
 positions:
-- name: Title or Position
-- name: Affiliation Name
-  logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
+- name: Incoming Software Engineer Intern, AI/ML @ NVIDIA
+- name: M.S. Student in Electrical Engineering, Stanford University
+  logo: /assets/images/badges/Stanford_seal.png
 
 
-email: "your@email.com"
+email: "stzhu@stanford.edu"
 # cv_link: link-to-your-cv-file
-gscholar: xFmQpf4AAAAJ  # This is an example, replace it with your own Google Scholar ID
-github: your_github_id
-twitter: your_twitter_id  # Do not include the '@' symbol
+# gscholar: your-google-scholar-id
+github: shatongzhu
+# twitter: your_twitter_id  # Do not include the '@' symbol
 # wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
 #   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
-# linkedin: your-linked-in-id
+linkedin: shatongzhu
 # orcid: 0000-0000-0000-0000
 
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    A <a href="https://en.wikipedia.org/wiki/Bicolor_cat" target="_blank">bicolor cat</a> is a cat with white fur combined with fur of some other colour, for example solid black, tabby, or colourpointed.
+    I am a Master's student in Electrical Engineering at <a href="https://www.stanford.edu/" target="_blank">Stanford University</a>, focusing on software and computer systems, machine learning, and optimization. I am broadly interested in agentic AI, AI infrastructure, and robust learning systems that connect theory with deployable software.
   </p>
   <p>
-    There are various patterns of a bicolour cat. These range from the Van-patterned (colour on the crown of the head 
-    and the tail only) to a solid colour with a throat locket or medallion. Bicolour coats are found in many cat breeds, 
-    as well as being common in domestic longhair and domestic shorthair cats.
+    My research experience spans cooperative multi-agent reinforcement learning, offline meta-reinforcement learning, and large language model applications. Before Stanford, I earned a B.Eng. in Data Science from <a href="https://www.tongji.edu.cn/" target="_blank">Tongji University</a>, where I worked on mathematical modeling, data mining, and optimization-driven AI systems.
+  </p>
+  <p>
+    I have also built applied AI systems in industry, including RAG-powered search, LLM application workflows, and agentic BI systems for Text-to-SQL and structured analytics.
   </p>
 
 portrait_url: /assets/images/photos/shatongzhu.png
 portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+  Ashton (Shatong) Zhu
 
 education:
-- name: Massachusetts Institute of Technology
-  logo: /assets/images/badges/MIT_Social_circle.png
+- name: Stanford University
+  logo: /assets/images/badges/Stanford_seal.png
+  dept: Department of Electrical Engineering
   position: >- 
-    Department of Electrical Engineering and Computer Science <br/>
-    Ph.D. Student
-  date: Sep. 2024 - present
-- name: Peking University
-  logo: /assets/images/badges/PKU_red.png
-  position: B.S. in Computer Science
-  date: Sep. 2019 - Jul. 2021
+    M.S., Software & Computer Systems focus
+  date: Aug. 2025 - Jun. 2027 (expected)
+- name: Tongji University
+  logo: /assets/images/badges/Tongji_University.png
+  dept: School of Computer Science
+  position: B.Eng. in Data Science
+  date: Sep. 2021 - Jun. 2025
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+experience:
+- name: NVIDIA
+  position: Incoming Software Engineer Intern, AI/ML
+  date: Incoming
+- name: ZhongAn Insurance
+  position: Software Engineer Intern, AI/ML; agent-powered BI and Text-to-SQL systems
+  date: Jun. 2024 - Sep. 2024
+- name: MeetSocial
+  position: Software Engineer Intern, LLM Applications; RAG, search, and multi-agent workflows
+  date: Mar. 2024 - Jun. 2024
 
 awards:
-- name: Award Name 2
+- name: ICLR 2026 paper acceptance in cooperative multi-agent reinforcement learning
+  date: 2026
+- name: NeurIPS 2024 Spotlight paper on context-based offline meta-reinforcement learning
   date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+- name: National Scholarship, Tongji University (top 0.2%), second-time laureate
+  date: 2024
+- name: National First Prize, RoboCup China Open
+  date: 2024
+- name: National First Prize, Information Security and Countermeasures Competition
+  date: 2024
+- name: Outstanding Graduate, Tongji University
+  date: 2025

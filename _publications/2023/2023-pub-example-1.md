@@ -1,17 +1,21 @@
 ---
-title:          "Lorem ipsum: Dolor sit amet, consectetur adipiscing elit"
-date:           2023-01-05 00:01:00 +0800
+title:          "Towards an Information Theoretic Framework of Context-Based Offline Meta-Reinforcement Learning"
+date:           2024-09-01 00:00:00 +0800
 selected:       true
-pub:            "Nature Communications"
-pub_date:       "2023"
+pub:            "Advances in Neural Information Processing Systems (NeurIPS)"
+pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
+pub_date:       "2024"
 abstract: >-
-  Cover image is a photo by Thomas Renaud on Unsplash. The abstract of the publication is meant to be a TLDR (very brief summary with 1~2 sentences) of your paper.
-cover:          /assets/images/covers/cover1.jpg
+  This work develops an information-theoretic view of context-based offline meta-reinforcement learning, unifying mainstream task representation methods and enabling robust algorithmic implementations.
 authors:
-- Your Name*
-- Robert White*
-- John Doe
-- Charles Green (Stanford)
+  - Lanqing Li*
+  - Hai Zhang*
+  - Xinyu Zhang
+  - Shatong Zhu
+  - Yang Yu
+  - Junqiao Zhao
+  - Pheng-Ann Heng
 links:
-  Paper: https://www.cell.com
+  arXiv: https://arxiv.org/abs/2402.02429
+  Paper: https://proceedings.neurips.cc/paper_files/paper/2024/file/8a30aba6514b56d02976f49797f6338a-Paper-Conference.pdf
 ---
