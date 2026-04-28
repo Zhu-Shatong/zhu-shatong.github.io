@@ -1,0 +1,60 @@
+{% if site.data.profile.experience %}
+<div class="row mt-3">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white experience-card">
+            <div class="card-body p-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h6 class="mb-0"><i class="fas fa-briefcase"></i> Experience</h6>
+                </div>
+
+                <div class="experience-list">
+                    {% for item in site.data.profile.experience %}
+                    <div class="experience-item {% unless forloop.last %}border-bottom{% endunless %}">
+                        <div class="experience-logo-wrap">
+                            {% if item.logo %}
+                            <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" class="experience-logo">
+                            {% else %}
+                            <span class="experience-logo-fallback">{{ item.name | slice: 0, 1 }}</span>
+                            {% endif %}
+                        </div>
+
+                        <div class="experience-content">
+                            <div class="d-flex flex-column flex-md-row justify-content-between">
+                                <div>
+                                    <div class="experience-company">{{ item.name }}</div>
+                                    <div class="experience-role">{{ item.role | default: item.position }}</div>
+                                </div>
+                                <div class="experience-meta text-md-right">
+                                    {% if item.date %}<div>{{ item.date }}</div>{% endif %}
+                                    {% if item.location %}<div>{{ item.location }}</div>{% endif %}
+                                </div>
+                            </div>
+
+                            {% if item.summary %}
+                            <p class="experience-summary">{{ item.summary }}</p>
+                            {% endif %}
+
+                            {% if item.tags %}
+                            <div class="experience-tags">
+                                {% for tag in item.tags %}
+                                <span>{{ tag }}</span>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+
+                            {% if item.highlights %}
+                            <ul class="experience-highlights">
+                                {% for highlight in item.highlights %}
+                                <li>{{ highlight }}</li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

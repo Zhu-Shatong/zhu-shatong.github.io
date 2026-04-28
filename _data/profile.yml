@@ -50,14 +50,51 @@ education:
 
 experience:
 - name: NVIDIA
-  position: Incoming Software Engineer Intern, AI/ML
+  logo: /assets/images/logos/nvidia.svg
+  role: Incoming Software Engineer Intern, AI/ML
   date: Incoming
+  location: Santa Clara, CA
+  summary: Incoming role focused on AI/ML software systems and infrastructure.
+  tags:
+  - AI/ML
+  - AI Infrastructure
+  - Software Engineering
+  highlights:
+  - Preparing to work on production-oriented AI/ML systems at the intersection of software engineering and intelligent infrastructure.
 - name: ZhongAn Insurance
-  position: Software Engineer Intern, AI/ML; agent-powered BI and Text-to-SQL systems
+  logo: /assets/images/logos/zhongan.png
+  role: Software Engineer Intern, AI/ML
   date: Jun. 2024 - Sep. 2024
+  location: Shanghai, China
+  summary: Built agent-powered BI workflows for Text-to-SQL and structured analytics.
+  tags:
+  - Agentic BI
+  - Text-to-SQL
+  - RAG
+  - LangChain
+  - FastAPI
+  - FAISS
+  highlights:
+  - Built a conversational intake workflow that generated structured JSON for downstream BI analytics and automation.
+  - Upgraded the LangChain pipeline with RAG, a FastAPI retrieval API, FAISS vector search, and HTTP connection pooling for more stable serving.
+  - Led a 4-intern team with code reviews and documentation standards to deliver the system on schedule.
 - name: MeetSocial
-  position: Software Engineer Intern, LLM Applications; RAG, search, and multi-agent workflows
+  logo: /assets/images/logos/meetsocial.svg
+  role: Software Engineer Intern, LLM Applications
   date: Mar. 2024 - Jun. 2024
+  location: Shanghai, China
+  summary: Contributed to early LLM application systems including MeetAsk, RAG search, and multi-agent workflows.
+  tags:
+  - LLM Applications
+  - RAG
+  - Milvus
+  - Elasticsearch
+  - LangChain
+  - Multi-Agent Systems
+  highlights:
+  - Implemented RAG modules for an enterprise Q&A platform with hybrid retrieval over vector and keyword search systems.
+  - Optimized prompt and multi-agent workflows for topic identification, keyword extraction, and structured response quality.
+  - Built review-insight and content-understanding pipelines using topic modeling and LLM-assisted summarization.
 
 awards:
 - name: ICLR 2026 paper acceptance in cooperative multi-agent reinforcement learning

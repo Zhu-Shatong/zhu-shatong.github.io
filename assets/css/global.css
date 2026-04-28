@@ -164,3 +164,114 @@ div.lazy {
 .email-text {
     font-family: Source Code Pro, monospace;
 }
+
+.experience-card {
+    border-top: 3px solid rgba(140, 21, 21, 0.78) !important;
+}
+
+.experience-list {
+    display: grid;
+    gap: 0;
+}
+
+.experience-item {
+    display: grid;
+    grid-template-columns: 100px minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1.25rem 0;
+}
+
+.experience-item:first-child {
+    padding-top: 0.25rem;
+}
+
+.experience-item:last-child {
+    padding-bottom: 0.25rem;
+}
+
+.experience-logo-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88px;
+    height: 58px;
+    padding: 0.5rem;
+    background: #fff;
+    border: 1px solid var(--stanford-border);
+    border-radius: 0.55rem;
+}
+
+.experience-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.experience-logo-fallback {
+    color: var(--stanford-red-dark);
+    font-weight: 900;
+}
+
+.experience-company {
+    color: var(--stanford-cool-gray);
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.experience-role {
+    color: rgba(46, 45, 41, 0.82);
+    font-weight: 700;
+}
+
+.experience-meta {
+    color: rgba(46, 45, 41, 0.58);
+    font-size: 0.88rem;
+    font-style: italic;
+    line-height: 1.35;
+}
+
+.experience-summary {
+    margin: 0.45rem 0 0;
+    color: rgba(46, 45, 41, 0.78);
+}
+
+.experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.65rem;
+}
+
+.experience-tags span {
+    padding: 0.18rem 0.52rem;
+    color: var(--stanford-red-dark);
+    font-size: 0.78rem;
+    font-weight: 700;
+    background: rgba(140, 21, 21, 0.055);
+    border: 1px solid rgba(140, 21, 21, 0.14);
+    border-radius: 999px;
+}
+
+.experience-highlights {
+    margin: 0.65rem 0 0;
+    padding-left: 1.05rem;
+    color: rgba(46, 45, 41, 0.78);
+    font-size: 0.92rem;
+}
+
+.experience-highlights li + li {
+    margin-top: 0.28rem;
+}
+
+@media (max-width: 575.98px) {
+    .experience-item {
+        grid-template-columns: 76px minmax(0, 1fr);
+        gap: 0.85rem;
+    }
+
+    .experience-logo-wrap {
+        width: 68px;
+        height: 50px;
+        padding: 0.4rem;
+    }
+}
