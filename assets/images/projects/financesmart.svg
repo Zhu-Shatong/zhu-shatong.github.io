@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">FinanceSmart project cover</title>
+  <desc id="desc">A cover for a financial LLM and analytics project.</desc>
+  <rect width="1200" height="800" fill="#f4f3ef"/>
+  <rect x="96" y="88" width="1008" height="624" rx="30" fill="#fff" stroke="#ded8c7" stroke-width="4"/>
+  <text x="150" y="170" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="800" fill="#2e2d29">FinanceSmart</text>
+  <text x="150" y="214" font-family="Inter, Arial, sans-serif" font-size="24" fill="#69645b">Financial LLM · Retrieval · Decision Support</text>
+  <g transform="translate(160 300)">
+    <rect x="0" y="0" width="265" height="260" rx="24" fill="#faf8f3" stroke="#ded8c7" stroke-width="3"/>
+    <path d="M44 188 L92 132 L146 158 L216 70" stroke="#8c1515" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="44" cy="188" r="12" fill="#2e2d29"/>
+    <circle cx="92" cy="132" r="12" fill="#2e2d29"/>
+    <circle cx="146" cy="158" r="12" fill="#2e2d29"/>
+    <circle cx="216" cy="70" r="12" fill="#2e2d29"/>
+  </g>
+  <g transform="translate(496 280)">
+    <rect x="0" y="0" width="250" height="300" rx="24" fill="#2e2d29"/>
+    <rect x="42" y="58" width="160" height="24" rx="12" fill="#ece6db"/>
+    <rect x="42" y="118" width="118" height="24" rx="12" fill="#c8bda8"/>
+    <rect x="42" y="178" width="186" height="24" rx="12" fill="#c8bda8"/>
+    <rect x="42" y="238" width="136" height="24" rx="12" fill="#8c1515"/>
+  </g>
+  <g transform="translate(820 306)">
+    <circle cx="104" cy="104" r="104" fill="#f4eee4" stroke="#ded8c7" stroke-width="4"/>
+    <text x="104" y="92" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#8c1515" text-anchor="middle">LLM</text>
+    <text x="104" y="132" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#2e2d29" text-anchor="middle">Insights</text>
+  </g>
+</svg>

@@ -21,8 +21,11 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col text-center h4">
-                        {{ site.data.profile.primary_name }}
+                    <div class="col text-center">
+                        <div class="h4 mb-1">{{ site.data.profile.primary_name }}</div>
+                        {% if site.data.profile.display_aliases %}
+                        <div class="profile-aliases profile-aliases-mini">{{ site.data.profile.display_aliases }}</div>
+                        {% endif %}
                     </div>
                 </div>
 

@@ -1,0 +1,35 @@
+---
+layout: default
+title : Awards
+navbar_title: Awards
+container_class: container-lg
+---
+
+<div class="page-heading">
+    <div>
+        <h1>Awards</h1>
+        <p>Selected honors, recognitions, and academic milestones.</p>
+    </div>
+</div>
+
+<div class="award-timeline homepage-card">
+    {% assign awards_by_year = site.data.profile.awards | group_by: "date" | sort: "name" | reverse %}
+    {% for year in awards_by_year %}
+    <section class="timeline-year">
+        <div class="timeline-year-label">{{ year.name }}</div>
+        <div class="timeline-items">
+            {% for item in year.items %}
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h2>{{ item.name }}</h2>
+                    {% if item.note %}
+                    <p>{{ item.note }}</p>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endfor %}
+</div>

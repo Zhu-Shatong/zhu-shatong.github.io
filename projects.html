@@ -1,0 +1,48 @@
+---
+layout: default
+title : Projects
+navbar_title: Projects
+container_class: container-xl
+---
+
+<div class="page-heading">
+    <div>
+        <h1>Projects</h1>
+        <p>Selected systems and applied research projects across agentic AI, LLM applications, AI infrastructure, and reinforcement learning.</p>
+    </div>
+</div>
+
+<div class="project-grid">
+    {% for project in site.data.projects %}
+    <article class="project-card homepage-card">
+        <div class="project-image-wrap">
+            <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="project-image">
+        </div>
+        <div class="project-body">
+            <div class="project-kicker">
+                <span>{{ project.affiliation }}</span>
+                <span>{{ project.period }}</span>
+            </div>
+            <h2>{{ project.title }}</h2>
+            <div class="project-subtitle">{{ project.subtitle }}</div>
+            <p>{{ project.summary }}</p>
+
+            {% if project.tags %}
+            <div class="project-tags">
+                {% for tag in project.tags %}
+                <span>{{ tag }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if project.highlights %}
+            <ul class="project-highlights">
+                {% for highlight in project.highlights %}
+                <li>{{ highlight }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+    </article>
+    {% endfor %}
+</div>

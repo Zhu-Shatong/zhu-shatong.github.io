@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Cooperative MARL project cover</title>
+  <desc id="desc">A cover for cooperative multi-agent reinforcement learning systems.</desc>
+  <rect width="1200" height="800" fill="#f5f8f8"/>
+  <rect x="90" y="86" width="1020" height="628" rx="30" fill="#fff" stroke="#d6e1df" stroke-width="4"/>
+  <text x="150" y="170" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" fill="#23413d">Cooperative MARL</text>
+  <text x="150" y="214" font-family="Inter, Arial, sans-serif" font-size="24" fill="#61736f">Joint Actions · Coordination · Optimization</text>
+  <g transform="translate(174 300)">
+    <circle cx="80" cy="80" r="54" fill="#e8f2ef" stroke="#7ca69d" stroke-width="5"/>
+    <circle cx="80" cy="260" r="54" fill="#e8f2ef" stroke="#7ca69d" stroke-width="5"/>
+    <circle cx="260" cy="170" r="54" fill="#e8f2ef" stroke="#7ca69d" stroke-width="5"/>
+    <text x="80" y="92" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#23413d" text-anchor="middle">A1</text>
+    <text x="80" y="272" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#23413d" text-anchor="middle">A2</text>
+    <text x="260" y="182" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#23413d" text-anchor="middle">A3</text>
+    <path d="M122 110 L218 148" stroke="#8c1515" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M122 230 L218 192" stroke="#8c1515" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M80 134 L80 206" stroke="#8c1515" stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(640 282)">
+    <rect x="0" y="0" width="360" height="310" rx="24" fill="#23413d"/>
+    <g fill="#e8f2ef">
+      <rect x="48" y="54" width="74" height="74" rx="10"/>
+      <rect x="144" y="54" width="74" height="74" rx="10"/>
+      <rect x="240" y="54" width="74" height="74" rx="10"/>
+      <rect x="48" y="150" width="74" height="74" rx="10"/>
+      <rect x="144" y="150" width="74" height="74" rx="10"/>
+      <rect x="240" y="150" width="74" height="74" rx="10"/>
+    </g>
+    <rect x="144" y="54" width="74" height="74" rx="10" fill="#8c1515"/>
+    <path d="M156 94 L176 112 L210 74" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -5,6 +5,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{ page.title }} - {{ site.data.profile.navbar_name }}</title>
+    <meta name="author" content="{{ site.data.profile.primary_name }}">
+    <meta name="description" content="{{ site.data.profile.primary_name }} ({{ site.data.profile.display_aliases }}), also known as Ashton (Shatong) Zhu, is an M.S. student at Stanford University working on agentic AI, AI infrastructure, machine learning, optimization, and multi-agent reinforcement learning.">
+    <meta name="keywords" content="{% for name in site.data.profile.search_names %}{{ name }}{% unless forloop.last %}, {% endunless %}{% endfor %}, Stanford University, NVIDIA, agentic AI, AI infrastructure, machine learning, reinforcement learning">
+    <link rel="icon" type="image/png" href="{{ '/assets/images/badges/Stanford_seal.png' | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ '/assets/images/badges/Stanford_seal.png' | relative_url }}">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "{{ site.data.profile.primary_name }}",
+      "alternateName": [{% for name in site.data.profile.search_names %}"{{ name }}"{% unless forloop.last %}, {% endunless %}{% endfor %}],
+      "url": "{{ site.url }}{{ site.baseurl }}/",
+      "email": "{{ site.data.profile.email }}",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Stanford University"
+      },
+      "sameAs": [
+        "{{ site.data.profile.gscholar }}",
+        "https://github.com/{{ site.data.profile.github }}",
+        "https://www.linkedin.com/in/{{ site.data.profile.linkedin }}"
+      ]
+    }
+    </script>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />

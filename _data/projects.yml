@@ -1,0 +1,69 @@
+- title: Agentic BI for Text-to-SQL
+  subtitle: LLM agent workflows for structured analytics
+  image: /assets/images/projects/agentic-bi.svg
+  period: 2024
+  affiliation: ZhongAn Insurance
+  summary: >-
+    Built an agent-powered business intelligence workflow that turns conversational
+    requirements into structured analytical intents and SQL-oriented downstream tasks.
+  tags:
+  - Agentic AI
+  - Text-to-SQL
+  - RAG
+  - LangChain
+  - FastAPI
+  highlights:
+  - Designed conversational intake flows that produced structured JSON for analytics automation.
+  - Integrated retrieval and vector search components for more reliable schema and context grounding.
+
+- title: MeetAsk LLM Applications
+  subtitle: Enterprise Q&A and multi-agent workflows
+  image: /assets/images/projects/meetask-llm.svg
+  period: 2024
+  affiliation: MeetSocial
+  summary: >-
+    Contributed to early LLM application systems for enterprise knowledge access,
+    review insight extraction, and multi-agent topic understanding.
+  tags:
+  - LLM Apps
+  - RAG
+  - Milvus
+  - Elasticsearch
+  - Multi-Agent
+  highlights:
+  - Implemented hybrid retrieval modules over vector and keyword search backends.
+  - Improved prompt and agent workflows for keyword extraction and structured responses.
+
+- title: FinanceSmart
+  subtitle: Financial LLM system for data-driven decisions
+  image: /assets/images/projects/financesmart.svg
+  period: 2024
+  affiliation: Tongji University
+  summary: >-
+    Explored a comprehensive financial LLM workflow for research, analysis, and
+    decision-support scenarios in financial data environments.
+  tags:
+  - Financial AI
+  - LLM
+  - Data Mining
+  - Analytics
+  highlights:
+  - Organized financial information pipelines around retrieval, summarization, and decision support.
+  - Connected data-centric modeling experience with practical LLM application design.
+
+- title: Cooperative MARL Research Systems
+  subtitle: Multi-agent reinforcement learning benchmarks and tooling
+  image: /assets/images/projects/cooperative-marl.svg
+  period: 2023 - 2026
+  affiliation: Research
+  summary: >-
+    Worked on cooperative multi-agent reinforcement learning systems spanning
+    value factorization, potentially optimal joint actions, and benchmark evaluation.
+  tags:
+  - Multi-Agent RL
+  - Optimization
+  - SMAC
+  - Theory
+  highlights:
+  - Evaluated coordination methods across game, traffic, and multi-agent benchmark settings.
+  - Connected algorithmic guarantees with empirical systems for cooperative decision making.

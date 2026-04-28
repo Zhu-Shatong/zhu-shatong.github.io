@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">MeetAsk LLM applications cover</title>
+  <desc id="desc">A cover for enterprise question answering and LLM application workflows.</desc>
+  <rect width="1200" height="800" fill="#f4f7fb"/>
+  <rect x="96" y="90" width="1008" height="620" rx="30" fill="#fff" stroke="#dde5ef" stroke-width="4"/>
+  <text x="150" y="170" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#27364a">MeetAsk LLM Applications</text>
+  <text x="150" y="214" font-family="Inter, Arial, sans-serif" font-size="24" fill="#66758a">Enterprise Q&amp;A · Hybrid Retrieval · Multi-Agent Workflows</text>
+  <g transform="translate(150 292)">
+    <rect x="0" y="0" width="290" height="98" rx="20" fill="#edf4ff" stroke="#c6d6ee" stroke-width="3"/>
+    <rect x="0" y="138" width="360" height="98" rx="20" fill="#fff6ea" stroke="#ecd4b4" stroke-width="3"/>
+    <rect x="0" y="276" width="250" height="98" rx="20" fill="#effaf5" stroke="#c2e2d2" stroke-width="3"/>
+    <text x="36" y="60" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#2d5f9a">Docs</text>
+    <text x="36" y="198" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#9a641c">Review Data</text>
+    <text x="36" y="336" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#2a7450">Knowledge</text>
+  </g>
+  <g stroke="#8d9bb0" stroke-width="7" fill="none" stroke-linecap="round">
+    <path d="M540 342 C610 342 620 426 690 426"/>
+    <path d="M540 480 C610 480 620 426 690 426"/>
+    <path d="M540 618 C610 618 620 426 690 426"/>
+  </g>
+  <g transform="translate(700 312)">
+    <rect x="0" y="0" width="350" height="260" rx="26" fill="#27364a"/>
+    <circle cx="70" cy="78" r="26" fill="#65a3ff"/>
+    <circle cx="140" cy="78" r="26" fill="#ffb14a"/>
+    <circle cx="210" cy="78" r="26" fill="#6bd19b"/>
+    <rect x="58" y="146" width="230" height="24" rx="12" fill="#d8e5f7"/>
+    <rect x="58" y="198" width="176" height="24" rx="12" fill="#d8e5f7"/>
+  </g>
+</svg>
