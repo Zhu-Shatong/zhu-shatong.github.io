@@ -3,14 +3,16 @@ secondary_name: ""
 navbar_name: "Ashton Zhu"
 
 positions:
-- name: Incoming Software Engineer Intern, AI/ML @ NVIDIA
 - name: M.S. Student in Electrical Engineering, Stanford University
   logo: /assets/images/badges/Stanford_seal.png
+- name: Incoming Software Engineer Intern, AI/ML @ NVIDIA
+  logo: /assets/images/logos/nvidia_logo.jpeg
+
 
 
 email: "stzhu@stanford.edu"
 # cv_link: link-to-your-cv-file
-# gscholar: your-google-scholar-id
+gscholar: https://scholar.google.com/citations?user=bfDoxPAAAAAJ&hl=en
 github: shatongzhu
 # twitter: your_twitter_id  # Do not include the '@' symbol
 # wechat_qrcode: /assets/images/etc/wechat.jpg
@@ -50,7 +52,7 @@ education:
 
 experience:
 - name: NVIDIA
-  logo: /assets/images/logos/nvidia.svg
+  logo: /assets/images/logos/nvidia_logo.jpeg
   role: Incoming Software Engineer Intern, AI/ML
   date: Incoming
   location: Santa Clara, CA
@@ -79,7 +81,7 @@ experience:
   - Upgraded the LangChain pipeline with RAG, a FastAPI retrieval API, FAISS vector search, and HTTP connection pooling for more stable serving.
   - Led a 4-intern team with code reviews and documentation standards to deliver the system on schedule.
 - name: MeetSocial
-  logo: /assets/images/logos/meetsocial.svg
+  logo: /assets/images/logos/meetsocial.png
   role: Software Engineer Intern, LLM Applications
   date: Mar. 2024 - Jun. 2024
   location: Shanghai, China

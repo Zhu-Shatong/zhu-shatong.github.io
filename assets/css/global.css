@@ -161,12 +161,19 @@ div.lazy {
     font-size: 100%;
 }
 
-.email-text {
-    font-family: Source Code Pro, monospace;
+.publication-cover,
+.publication-mobile-cover {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    background-color: #f7f7f7;
 }
 
-.experience-card {
-    border-top: 3px solid rgba(140, 21, 21, 0.78) !important;
+.publication-mobile-cover {
+    margin-bottom: 0.85rem;
+}
+
+.email-text {
+    font-family: Source Code Pro, monospace;
 }
 
 .experience-list {
@@ -176,9 +183,9 @@ div.lazy {
 
 .experience-item {
     display: grid;
-    grid-template-columns: 100px minmax(0, 1fr);
-    gap: 1rem;
-    padding: 1.25rem 0;
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 0.85rem;
+    padding: 1rem 0;
 }
 
 .experience-item:first-child {
@@ -193,12 +200,12 @@ div.lazy {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 88px;
-    height: 58px;
-    padding: 0.5rem;
-    background: #fff;
-    border: 1px solid var(--stanford-border);
-    border-radius: 0.55rem;
+    width: 56px;
+    height: 56px;
+    padding: 0.35rem;
+    background: transparent;
+    border: 0;
+    border-radius: 0.25rem;
 }
 
 .experience-logo {
@@ -214,18 +221,19 @@ div.lazy {
 
 .experience-company {
     color: var(--stanford-cool-gray);
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
 .experience-role {
     color: rgba(46, 45, 41, 0.82);
+    font-size: 0.92rem;
     font-weight: 700;
 }
 
 .experience-meta {
     color: rgba(46, 45, 41, 0.58);
-    font-size: 0.88rem;
+    font-size: 0.84rem;
     font-style: italic;
     line-height: 1.35;
 }
@@ -233,6 +241,7 @@ div.lazy {
 .experience-summary {
     margin: 0.45rem 0 0;
     color: rgba(46, 45, 41, 0.78);
+    font-size: 0.92rem;
 }
 
 .experience-tags {
@@ -243,9 +252,9 @@ div.lazy {
 }
 
 .experience-tags span {
-    padding: 0.18rem 0.52rem;
+    padding: 0.14rem 0.45rem;
     color: var(--stanford-red-dark);
-    font-size: 0.78rem;
+    font-size: 0.74rem;
     font-weight: 700;
     background: rgba(140, 21, 21, 0.055);
     border: 1px solid rgba(140, 21, 21, 0.14);
@@ -256,7 +265,7 @@ div.lazy {
     margin: 0.65rem 0 0;
     padding-left: 1.05rem;
     color: rgba(46, 45, 41, 0.78);
-    font-size: 0.92rem;
+    font-size: 0.88rem;
 }
 
 .experience-highlights li + li {
@@ -265,13 +274,13 @@ div.lazy {
 
 @media (max-width: 575.98px) {
     .experience-item {
-        grid-template-columns: 76px minmax(0, 1fr);
-        gap: 0.85rem;
+        grid-template-columns: 52px minmax(0, 1fr);
+        gap: 0.75rem;
     }
 
     .experience-logo-wrap {
-        width: 68px;
-        height: 50px;
-        padding: 0.4rem;
+        width: 44px;
+        height: 44px;
+        padding: 0.3rem;
     }
 }
