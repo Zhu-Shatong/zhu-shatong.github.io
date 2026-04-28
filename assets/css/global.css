@@ -81,6 +81,12 @@ a:focus {
     box-shadow: 0 14px 30px rgba(46, 45, 41, 0.12);
 }
 
+.profile-mobile-portrait {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
 .card-img-overlay {
     border-radius: 0.8rem!important;
 }
@@ -352,6 +358,10 @@ div.lazy {
     background-color: #f7f7f7;
     border: 1px solid rgba(232, 226, 220, 0.85);
     box-shadow: 0 8px 18px rgba(46, 45, 41, 0.08);
+}
+
+.publication-cover-column {
+    max-width: 280px;
 }
 
 .publication-mobile-cover {
