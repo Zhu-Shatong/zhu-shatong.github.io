@@ -1,0 +1,7 @@
+# Stanford personal web hosting:
+# https://web.stanford.edu/~stzhu/
+#
+# Build with:
+# bundle exec jekyll build --config _config.yml,_config_stanford.yml --destination _site_stanford
+baseurl: "/~stzhu"
+url: "https://web.stanford.edu"

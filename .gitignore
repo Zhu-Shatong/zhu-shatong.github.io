@@ -1,4 +1,6 @@
 _site/
+_site_stanford/
+_site_github_root/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
